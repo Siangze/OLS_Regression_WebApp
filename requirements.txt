@@ -1,6 +1,7 @@
 streamlit==1.48.1
 pandas==2.3.1
-openpyxl
+openpyxl==3.1.5
 statsmodels
-
-
+plotly==6.3.0
+matplotlib==3.10.5
+seaborn==0.13.2
