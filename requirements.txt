@@ -5,3 +5,4 @@ statsmodels
 plotly==6.3.0
 matplotlib==3.10.5
 seaborn==0.13.2
+st-gsheets-connection==0.1.0
