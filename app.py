@@ -1,4 +1,4 @@
-rimport streamlit as st
+import streamlit as st
 
 st.title("Hello Streamlit 👋")
 st.write("這是一個最小展示用的範例。")
