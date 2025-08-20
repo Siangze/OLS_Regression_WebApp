@@ -40,7 +40,7 @@ def upload_data_tab():
         st.sidebar.subheader("Regression Group Configuration")
 
         if st.sidebar.button("Add Group", key="add_config_btn"):
-            if len(st.session_state.regression_configs) < 10:
+            if len(st.session_state.regression_configs) < 50:
                 st.session_state.regression_configs.append({
                     'id': len(st.session_state.regression_configs),
                     'y_var': None,
@@ -49,7 +49,7 @@ def upload_data_tab():
                     'results': None
                 })
             else:
-                st.sidebar.warning("You can configure a maximum of 10 regression groups.")
+                st.sidebar.warning("You can configure a maximum of 50 regression groups.")
 
         for i, config in enumerate(st.session_state.regression_configs):
             print(f"--- Debug: Group {i+1} Configuration ---")
@@ -136,3 +136,4 @@ def upload_data_tab():
                 st.session_state.next_tab_enabled[3] = True # Enable Batch Conclusion tab (since its dependent on batch results)
                 st.session_state.next_tab_enabled[4] = True # Enable Forecast tab
                 st.session_state.current_tab = 2 # Move to Batch Results tab after execution
+
