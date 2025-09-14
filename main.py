@@ -7,6 +7,12 @@ from tabs.batch_conclusion_tab import batch_conclusion_tab
 from tabs.forecast_tab import forecast_tab
 
 initialize_session_state()
+# Set
+st.set_page_config(
+    page_title="OLS Regression WebApp",  
+    page_icon="📊",               
+    layout="wide"                 
+)
 
 # Define tabs and their corresponding functions
 tabs_config = [
@@ -26,3 +32,4 @@ for i, tab in enumerate(tabs):
             tabs_config[i]["function"]()
         else:
             st.warning("Please complete the previous step to access this page.")
+
